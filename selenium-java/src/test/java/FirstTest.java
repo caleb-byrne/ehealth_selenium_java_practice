@@ -12,7 +12,7 @@ public class FirstTest {
         DemoQa demoQa = new DemoQa(driver);
 
         driver.get("https://demoqa.com/automation-practice-form");
-
+        Assert.assertTrue(demoQa.validateSubmitButtonExists());
         demoQa.enterFirstName("John");
         Assert.assertEquals("John", demoQa.validateFirstNameIsEntered());
         demoQa.selectGender();

@@ -24,8 +24,14 @@ public class DemoQa {
     private By hobbiesField = By.id("hobbies-checkbox-1");
     private By uploadPictureField = By.id("uploadPicture");
     private By stateField = By.xpath("//div[contains(text(),'Select State')]");
+    private By submitButton = By.id("submit");
 
     // Methods
+    public boolean validateSubmitButtonExists() {
+        WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameField));
+        return submit.isDisplayed();
+    }
+
     public void enterFirstName(String firstName) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(firstNameField));
         element.sendKeys(firstName);
