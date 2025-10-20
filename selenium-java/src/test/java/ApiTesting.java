@@ -13,9 +13,9 @@ public class ApiTesting {
 
     @Test
     public void apiTestingPractice() {
-
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
+        // GET request (your first one is fine)
         given()
                 .when()
                 .get("/posts/1")
@@ -24,11 +24,27 @@ public class ApiTesting {
                 .body("userId", equalTo(1))
                 .extract().response();
 
-        // System.out.println(getResponse.asPrettyString());
-        // System.out.println(getResponse.asString());
-        // getResponse.prettyPrint();
+        // POST request with body
+        String requestBody = "{\n" +
+                "  \"title\": \"My New Post\",\n" +
+                "  \"body\": \"This is the content of my post\",\n" +
+                "  \"userId\": 1\n" +
+                "}";
 
-        // Assert.assertEquals(200, getResponse.getStatusCode());
-        // Assert.assertNotNull(getResponse.jsonPath().getString("body"));
+        Response postResponse = given()
+
+                .header("Content-Type", "application/json")
+                .body(requestBody)
+                .when()
+                .post("/posts")
+                .then()
+                .statusCode(201)
+                .body("title", equalTo("My New Post"))
+                .body("userId", equalTo(1))
+                .extract().response();
+
+        // Print the response
+        System.out.println("POST Response:");
+        postResponse.prettyPrint();
     }
 }
