@@ -6,6 +6,11 @@ import org.junit.Test;
 import org.junit.Assert;
 
 public class FirstTest {
+    public static void main(String[] args) {
+        FirstTest test = new FirstTest();
+        test.fillOutForm();
+    }
+
     @Test
     public void fillOutForm() {
         WebDriver driver = new ChromeDriver();

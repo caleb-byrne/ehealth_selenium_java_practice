@@ -28,7 +28,7 @@ public class DemoQa {
 
     // Methods
     public boolean validateSubmitButtonExists() {
-        WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameField));
+        WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(submitButton));
         return submit.isDisplayed();
     }
 
@@ -38,7 +38,7 @@ public class DemoQa {
     }
 
     public void selectGender() {
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(genderFieldInput));
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(genderFieldLabel));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
     }

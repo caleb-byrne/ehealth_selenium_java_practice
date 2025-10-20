@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="FirstTest" time="18.586" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="FirstTest" time="10.502" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/calebbyrne/Documents/QA Projects/ehealth_selenium_java_practice/selenium-java/target/surefire/surefirebooter11556001909835010399.jar /Users/calebbyrne/Documents/QA Projects/ehealth_selenium_java_practice/selenium-java/target/surefire 2025-10-20T09-43-08_301-jvmRun1 surefire6634381353918873291tmp surefire_012791384630405131465tmp"/>
+    <property name="sun.java.command" value="/Users/calebbyrne/Documents/QA Projects/ehealth_selenium_java_practice/selenium-java/target/surefire/surefirebooter3122812347281137355.jar /Users/calebbyrne/Documents/QA Projects/ehealth_selenium_java_practice/selenium-java/target/surefire 2025-10-20T10-17-45_528-jvmRun1 surefire6521866175008592504tmp surefire_0344508320810663870tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="FirstTest"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/calebbyrne/Documents/QA Projects/ehealth_selenium_java_practice/selenium-java/target/surefire/surefirebooter11556001909835010399.jar"/>
+    <property name="surefire.real.class.path" value="/Users/calebbyrne/Documents/QA Projects/ehealth_selenium_java_practice/selenium-java/target/surefire/surefirebooter3122812347281137355.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.28+6"/>
@@ -63,20 +63,5 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="fillOutForm" classname="FirstTest" time="18.558">
-    <error message="Expected condition failed: waiting for visibility of element located by By.id: gender-radio-1 (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;11.0.28&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: /var/folders/x1/xn8ywvg51q1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59853/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 42c95f98cc9349c0eb2db4755ffc4e2c" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of element located by By.id: gender-radio-1 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '11.0.28'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: /var/folders/x1/xn8ywvg51q1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59853/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 42c95f98cc9349c0eb2db4755ffc4e2c
-	at FirstTest.fillOutForm(FirstTest.java:18)
-</error>
-    <system-err><![CDATA[Oct 20, 2025 9:43:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 141
-Oct 20, 2025 9:43:10 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 141.0.7390.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
+  <testcase name="fillOutForm" classname="FirstTest" time="10.477"/>
 </testsuite>
