@@ -10,7 +10,6 @@ public class DemoQa {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    // Constructor - needs proper syntax
     public DemoQa(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -26,11 +25,6 @@ public class DemoQa {
     private By submitButton = By.id("submit");
 
     // Methods
-    public boolean validateSubmitButtonExists() {
-        WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(submitButton));
-        return submit.isDisplayed();
-    }
-
     public void enterFirstName(String firstName) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(firstNameField));
         element.sendKeys(firstName);
@@ -40,6 +34,12 @@ public class DemoQa {
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(genderFieldLabel));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
+    }
+
+    // Validation methods
+    public boolean validateSubmitButtonExists() {
+        WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(submitButton));
+        return submit.isDisplayed();
     }
 
     public String validateFirstNameIsEntered() {
